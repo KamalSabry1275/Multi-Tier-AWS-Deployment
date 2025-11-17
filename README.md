@@ -101,7 +101,7 @@ Database Only allows access from backend subnet (10.42.3.0/24)
 ### **1. Clone this repository**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/KamalSabry1275/Multi-Tier-AWS-Deployment/tree/main
 cd project
 ```
 
