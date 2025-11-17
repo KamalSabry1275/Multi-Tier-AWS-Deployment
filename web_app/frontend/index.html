@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Frontend Test</title>
+  </head>
+  <body>
+    <h1>Hello from Kamal Sabry!</h1>
+    <div id="result">Loading ...</div>
+    <script>
+      async function getUsers() {
+        try {
+          const response = await fetch("/api/users");
+          const data = await response.json();
+          document.getElementById("result").innerHTML =
+            "<h3>Users from Database:</h3><ul>" +
+            data.map((user) => "<li>" + user.name + "</li>").join("") +
+            "</ul>";
+        } catch (error) {
+          document.getElementById("result").innerHTML = "Error: " + error;
+        }
+      }
+      getUsers();
+    </script>
+  </body>
+</html>
