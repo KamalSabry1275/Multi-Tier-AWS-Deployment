@@ -126,7 +126,7 @@ terraform plan
 ### **5. Deploy**
 
 ```bash
-terraform apply -auto-approve
+terraform apply --auto-approve
 ```
 
 ---
@@ -193,7 +193,7 @@ You can modify:
 To destroy all resources:
 
 ```bash
-terraform destroy -auto-approve
+terraform destroy --auto-approve
 ```
 
 ---
